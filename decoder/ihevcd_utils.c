@@ -568,6 +568,9 @@ IHEVCD_ERROR_T ihevcd_pic_buf_mgr_add_bufs(codec_t *ps_codec)
      */
     max_dpb_size++;
 
+    ps_codec->i4_max_dpb_size = max_dpb_size;
+
+
     /* If num_ref_frames and num_reorder_frmaes is specified
      * Use minimum value
      */
